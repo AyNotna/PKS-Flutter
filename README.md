@@ -11,7 +11,7 @@
 <img width="948" height="500" alt="image" src="https://github.com/user-attachments/assets/7548f820-d55b-40ab-985d-32bba436e13f" />
 
 ## Контрольная точка № 3
-Dсе кнопки соединены со своими экранами, переходы работают.
+Все кнопки соединены со своими экранами, переходы работают.
 
 <img width="934" height="486" alt="image" src="https://github.com/user-attachments/assets/ef2030f6-b493-406b-8c3c-6c984c4014a8" />
 
