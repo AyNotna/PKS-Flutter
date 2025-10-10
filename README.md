@@ -61,22 +61,90 @@
 
 ### Контрольная точка №2
 
-Значение счетчика увеличивается на 1 при нажатии кнопки 
+Добавление новой заметки
+Открывает экран создания новой заметки
+```dart
+Container(
+            width: double.infinity,
+            padding: const EdgeInsets.all(20),
+            child: ElevatedButton(
+              onPressed: _addNote,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFFFF8627),
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                elevation: 0,
+              ),
+              child: Text(
+                'ADD NEW ONE',
+                style: TextStyle(
+                  fontFamily: 'RobotoMono',
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+          ),
+```
 
 
 ### Контрольная точка №3
 
-Счетчик сбрасывается кнопкой "Сбросить"
+Редактирование заметки
+Открывает экран редактирования существующей заметки
+``` dart
+Future<void> _addNote() async {
+    final newNote = await Navigator.push<Note>(
+      context,
+      MaterialPageRoute(builder: (_) => const EditNotePage()),
+    );
 
+    if (newNote != null) {
+      setState(() {
+        _notes.add(newNote);
+      });
+    }
+  }
+
+  Future<void> _editNote(Note note) async {
+    final updatedNote = await Navigator.push<Note>(
+      context,
+      MaterialPageRoute(builder: (_) => EditNotePage(existing: note)),
+    );
+```
 
 ### Контрольная точка №4
 
-При зажатии кнопки "Увеличить", к счетчику прибавляется 10
-
+Удаление заметки с помощью свапа
+Позволяет удалить заметку свайпом влево
+``` dart
+return Dismissible(
+                            key: ValueKey(note.id),
+                            direction: DismissDirection.endToStart,
+                            background: Container(
+                              color: Colors.red,
+                              alignment: Alignment.centerRight,
+                              padding: const EdgeInsets.only(right: 20),
+                              child: const Icon(Icons.delete, color: Colors.white),
+                            ),
+                            onDismissed: (_) => _deleteNote(note),
+```
 
 ### Контрольная точка №5
 
-В коде использовались контейнеры, отступы и другие стили. Все кнопки и названия выровнены
+Удаление заметки с помощью кнопки
+Кнопка корзины в правом углу каждой заметки
+``` dart
+ IconButton(
+                                          onPressed: () => _deleteNote(note),
+                                          icon: const Icon(Icons.delete,
+                                              size: 18),
+```
 
 
-В коде обрабатываются события: нажатие кнопки "Увеличить", долгое нажатие кнопки "Увеличить" и нажатие кнопки "Сбросить".
+https://github.com/user-attachments/assets/5218573d-aa1b-47d5-ba85-c9ab0ef4ee39
+
+
