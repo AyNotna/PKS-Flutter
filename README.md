@@ -4,7 +4,8 @@
 ### Контрольная точка №1
 Список заметок
 Отображает список заметок с помощью ListView.builder. Каждая заметка показывается в карточке с заголовком и текстом
-```: ListView.builder(
+```
+  : ListView.builder(
                     padding: const EdgeInsets.symmetric(
                         horizontal: 20, vertical: 16),
                     itemCount: _notes.length,
