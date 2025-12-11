@@ -4,18 +4,26 @@
 Подключение firebase к проекту.
 
 <img width="600" height="201" alt="image" src="https://github.com/user-attachments/assets/bde2f0a7-e52b-486e-b3a5-c2bea9a42c5e" />
+
+
 ### Контрольная точка №2
 Создание базы данных в firebase.
 
 <img width="773" height="519" alt="image" src="https://github.com/user-attachments/assets/d15d8a43-bc5c-49a0-b89c-190b0815af9d" />
+
+
 ### Контрольная точка №3
 Настроеная бд.
 
 <img width="1054" height="528" alt="image" src="https://github.com/user-attachments/assets/41213332-09f4-400e-be5e-8ab70aca8cfb" />
+
+
 ### Контрольная точка №4
 Работающее приложение с заметками. Добавление/изменение/удаление
 
 <img width="308" height="536" alt="image" src="https://github.com/user-attachments/assets/d37d7fda-197f-4493-87c4-17869f98a4ac" />
+
+
 ### Контрольная точка №5
 Отображение заметки в firebase.
 
