@@ -18,7 +18,7 @@ Cоздание нового ресурса в mockapi
 
 ### Контрольная точка №3
 Код модели note
-'''dart 
+``` dart 
 class Note {
   final String id;
   final String title;
@@ -36,4 +36,5 @@ class Note {
 
   Map<String, dynamic> toJson() => {'id': id, 'title': title, 'body': body};
 }
-'''
+```
+
