@@ -38,3 +38,42 @@ class Note {
 }
 ```
 
+
+### Контрольная точка №4
+Измененные эндпоинты репозитории
+
+<img width="550" height="450" alt="image" src="https://github.com/user-attachments/assets/6c41cc2e-a3a6-46fe-85de-b8176dc6cbe2" />
+
+### Контрольная точка №2
+
+
+<img width="304" height="522" alt="image" src="https://github.com/user-attachments/assets/8536799b-8385-448f-ab22-3559e110854b" />
+
+### Контрольная точка №2
+записи
+
+<img width="302" height="160" alt="image" src="https://github.com/user-attachments/assets/b0ce41ff-36d3-4264-9258-a794806d9f2e" />
+
+### Контрольная точка №2
+Проект создан, собран и запускается
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
