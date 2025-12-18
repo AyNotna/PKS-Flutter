@@ -1,35 +1,39 @@
 # Отчет по практическому заданию № 13
 ## Белугин Антон Алексеевич
 ### Контрольная точка №1
-Cоздание нового ресурса в mockapi
+Создан новый проект
+
+
+<img width="634" height="365" alt="image" src="https://github.com/user-attachments/assets/e38cf65e-4231-499f-9325-80d667db519c" />
 
 
 ### Контрольная точка №2
-Проект создан, собран и запускается
+Добавлены все зависимости
+``` yaml 
+dependencies:
+  flutter:
+    sdk: flutter
 
-
-
-### Контрольная точка №3
-Код модели note
-``` dart 
-}
+  cupertino_icons: ^1.0.8
+  geolocator: ^14.0.2
+  geocoding: ^4.0.0
+  sensors_plus: ^7.0.0
+  flutter_compass: ^0.8.1
+  permission_handler: ^12.0.1
 ```
 
+Добавлены все разрешения
 
-### Контрольная точка №4
-Измененные эндпоинты репозитории
+``` xml
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+```
+### Контрольная точка №3
+Запускается приложение, определяется местоположение, компас и акселерометр работают
+
+<img width="305" height="542" alt="image" src="https://github.com/user-attachments/assets/b8486cc6-ca77-457e-a70c-7f4d1767ff92" />
 
 
-### Контрольная точка №2
-
-
-
-### Контрольная точка №2
-записи
-
-
-### Контрольная точка №2
-Проект создан, собран и запускается
 
 
 
