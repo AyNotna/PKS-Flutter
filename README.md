@@ -76,11 +76,16 @@ dev_dependencies:
 
 
 ### Контрольная точка №2
-записи
+Оптимизация
 
-
-### Контрольная точка №2
-Проект создан, собран и запускается
+``` dart
+return NoteItem(
+  key: ValueKey(note.id), // Стабильный уникальный ключ
+  note: note,
+  onEdit: () => _edit(note),
+  onDelete: () => _delete(note),
+);
+```
 
 
 
